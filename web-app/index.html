@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1 class="title">Key Detector</h1>
+
+    <div id="file-upload-container">
+        <button id="select-file-button">Select File</button>
+        <input type="file" id="file-input" class="hidden">
+        <div id="loading-circle" class="hidden"></div>
+    </div>
+
+    <div id="result-table" class="hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Key</th>
+                    <th>Confidence</th>
+                </tr>
+            </thead>
+            <tbody id="key-results">
+                <tr>
+                    <td>1</td>
+                    <td id="key-cell-1"></td>
+                    <td id="confidence-cell-1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td id="key-cell-2"></td>
+                    <td id="confidence-cell-2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td id="key-cell-3"></td>
+                    <td id="confidence-cell-3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="pcp-chart-container" class="hidden">
+        <canvas id="pcp-chart" width="300" height="300"></canvas> <!-- Smaller chart size -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
