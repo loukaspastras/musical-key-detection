@@ -17,5 +17,8 @@ This repository contains the code and datasets for the thesis "Evaluation of Mac
 ### Web Application
 The web application is accessible at [GitHub Pages URL](https://loukaspastras.github.io/musical-key-detection/).
 
+### Thesis Presentation (Greek)
+Click here to see the presentation and interact with it: [Canva URL](https://keydetection.my.canva.site/)
+
 ### License
 This project is licensed under the MIT License.
